@@ -3,11 +3,16 @@ import NumberDisplay from "../NumberDisplay";
 import { generateCells } from "../../utils";
 
 import "./App.scss";
+import Button from "../Button";
 
 const App: React.FC = () => {
   const [cells, setCells] = useState(generateCells());
 
-  console.log(cells);
+  const renderCells = (): React.ReactNode => {
+    return cells.map((row, rowIndex) =>
+      row.map((cell, colIndex) => <Button key={`${rowIndex}-${colIndex}`} />)
+    );
+  };
 
   return (
     <div className="App">
@@ -20,7 +25,7 @@ const App: React.FC = () => {
         </div>
         <NumberDisplay value={23} />
       </div>
-      <div className="Body">Body</div>
+      <div className="Body">{renderCells()}</div>
     </div>
   );
 };
