@@ -1,4 +1,4 @@
-import { number } from "yargs";
+import React from "react";
 import { MAX_COLS, MAX_ROWS, NO_OF_BOMBS } from "../constants";
 import { Cell, CellValue, CellState } from "../types";
 
