@@ -1,1 +1,3 @@
 # minesweeper
+
+![minesweeper](minesweeper.png)
