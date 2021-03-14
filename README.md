@@ -1,3 +1,3 @@
 # minesweeper
 
-![minesweeper](minesweeper.png)
+![minesweeper](public/minesweeper.png)
